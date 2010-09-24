@@ -85,6 +85,9 @@ set smartcase " Ignore case when searching lowercase
 " Colors **********************************************************************
 "set t_Co=256 " 256 colors
 set background=dark
+:highlight Normal guifg=grey guibg=darkgrey
+:highlight Normal ctermfg=grey ctermbg=darkgrey
+":colorscheme desert
 syntax on " syntax highlighting
  
  
@@ -102,12 +105,18 @@ set linebreak " Wrap at word
 " Mappings ********************************************************************
 " Professor VIM says '87% of users prefer jj over esc', jj abrams disagrees
 imap jj <Esc>
-imap uu _
 imap hh =>
-imap aa @
- 
- 
+imap <F5> <Esc>:w<Return> :!pdflatex arbeit.tex && bibtex arbeit && pdflatex arbeit.tex<Return> 
+map <F5> <Esc>:w<Return> :!pdflatex arbeit.tex && bibtex arbeit && pdflatex arbeit.tex<Return> 
+
+map <S-left> <Esc> :tabp<Return> 
+map <S-right> <Esc> :tabn<Return> 
+imap <S-left> <Esc> :tabp<Return> 
+imap <S-right> <Esc> :tabn<Return> 
+
+
 " Directories *****************************************************************
+
 " Setup backup location and enable
 "set backupdir=~/backup/vim
 "set backup
