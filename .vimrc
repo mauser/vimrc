@@ -25,7 +25,13 @@
 " | Put machine/user specific settings in ~/.vimrc.local |
 " -----------------------------------------------------------------------------
  
- 
+" initialise pathogen
+" see
+" http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+
 set nocompatible
  
  
