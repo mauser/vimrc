@@ -59,7 +59,14 @@ set si " smartindent (local to buffer)
 " Scrollbars ******************************************************************
 set sidescrolloff=2
 set numberwidth=4
- 
+
+" 80 character limitation
+" taken from http://stackoverflow.com/questions/235439/vim-80-column-layout-concerns
+if has("colorcolumn")
+	  set colorcolumn=80
+  else
+	  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
  
 " Windows *********************************************************************
 set equalalways " Multiple windows, when created, are equal in size
@@ -108,6 +115,9 @@ imap jj <Esc>
 imap hh =>
 imap <F5> <Esc>:w<Return> :!pdflatex arbeit.tex && bibtex arbeit && pdflatex arbeit.tex<Return> 
 map <F5> <Esc>:w<Return> :!pdflatex arbeit.tex && bibtex arbeit && pdflatex arbeit.tex<Return> 
+imap <F6> <Esc>:w<Return> :!pdflatex presentation.tex<Return> 
+map <F6> <Esc>:w<Return> :!pdflatex presentation.tex<Return> 
+
 
 map <S-left> <Esc> :tabp<Return> 
 map <S-right> <Esc> :tabn<Return> 
