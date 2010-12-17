@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/sebastian/.vimperator'
-let g:netrw_dirhist_2='/home/sebastian/.vim'
-let g:netrw_dirhist_3='/home/sebastian/.vim-git/vimrc'
-let g:netrw_dirhist_4='/home/sebastian/bachelor/ausarbeitung'
-let g:netrw_dirhist_5='/home/sebastian/futhark/diaspora/db/seeds'
-let g:netrw_dirhist_6='/home/sebastian/.vim-git/vimrc'
