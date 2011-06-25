@@ -130,6 +130,8 @@ map <S-right> <Esc> :tabn<Return>
 imap <S-left> <Esc> :tabp<Return> 
 imap <S-right> <Esc> :tabn<Return> 
 
+map tt :TlistToggle<Return>
+imap tt :TlistToggle<Return>
 
 " Directories *****************************************************************
 

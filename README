@@ -1,1 +1,3 @@
+Requires the debian package 'exuberant-ctags' for the taglist plugin.
+
 Do 'git submodule init' and 'git submodule update' after a checkout of this folder!
