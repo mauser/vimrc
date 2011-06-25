@@ -97,10 +97,12 @@ set smartcase " Ignore case when searching lowercase
  
 " Colors **********************************************************************
 "set t_Co=256 " 256 colors
-set background=dark
-:highlight Normal guifg=grey guibg=darkgrey
-:highlight Normal ctermfg=grey ctermbg=darkgrey
-":colorscheme desert
+"set background=dark
+":highlight Normal guifg=grey guibg=darkgrey
+":highlight Normal ctermfg=grey ctermbg=darkgrey
+:colorscheme molokai
+
+
 syntax on " syntax highlighting
  
  
