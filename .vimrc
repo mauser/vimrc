@@ -100,7 +100,7 @@ set smartcase " Ignore case when searching lowercase
 "set background=dark
 ":highlight Normal guifg=grey guibg=darkgrey
 ":highlight Normal ctermfg=grey ctermbg=darkgrey
-:colorscheme molokai
+:colorscheme molokai_mauser
 
 
 syntax on " syntax highlighting
