@@ -126,14 +126,14 @@ map <F5> <Esc>:w<Return> :!pdflatex arbeit.tex && bibtex arbeit && pdflatex arbe
 imap <F6> <Esc>:w<Return> :!pdflatex presentation.tex<Return> 
 map <F6> <Esc>:w<Return> :!pdflatex presentation.tex<Return> 
 
-
 map <S-left> <Esc> :tabp<Return> 
 map <S-right> <Esc> :tabn<Return> 
 imap <S-left> <Esc> :tabp<Return> 
 imap <S-right> <Esc> :tabn<Return> 
 
-map tt :TlistToggle<Return>
-imap tt :TlistToggle<Return>
+nmap tt :TlistToggle<Return>
+cmap tt :TlistToggle<Return>
+"imap tt :TlistToggle<Return>
 
 " Directories *****************************************************************
 
