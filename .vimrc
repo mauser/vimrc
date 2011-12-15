@@ -132,7 +132,7 @@ imap <S-left> <Esc> :tabp<Return>
 imap <S-right> <Esc> :tabn<Return> 
 
 nmap tt :TlistToggle<Return>
-cmap tt :TlistToggle<Return>
+"cmap tt :TlistToggle<Return>
 "imap tt :TlistToggle<Return>
 
 " Directories *****************************************************************
