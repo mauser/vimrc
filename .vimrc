@@ -139,7 +139,17 @@ let g:AutoComplPop_BehaviorKeywordLength = 2
 " Open NERDTree on start
 "autocmd VimEnter * exe 'NERDTree' | wincmd l
  
- 
+
+
+nmap <C-T> :enew<cr>
+
+" Move to the next buffer
+nmap <C-M> :bnext<CR>
+"
+" " Move to the previous buffer
+nmap <C-N> :bprevious<CR>
+nmap <C-X> :bp <BAR> bd #<CR>
+
  
 " -----------------------------------------------------------------------------
 " | Host specific |
