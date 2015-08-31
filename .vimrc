@@ -34,9 +34,6 @@ call pathogen#helptags()
 
 set nocompatible
  
-"hydrogen style indentation 
-set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab  
- 
  
 " Windows *********************************************************************
 set equalalways " Multiple windows, when created, are equal in size
@@ -83,7 +80,6 @@ autocmd FileType cpp call SetCOptions()
 autocmd FileType h call SetCOptions()
 autocmd FileType c call SetCOptions()
 function! SetCOptions()
-setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
     :call tagbar#autoopen(0)
 endfunction
 
@@ -91,6 +87,9 @@ endfunction
 " File Stuff ******************************************************************
 filetype plugin indent on
 " To show current filetype use: set filetype
+ 
+"hydrogen style indentation 
+set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab  
  
 "autocmd FileType html :set filetype=xhtml
  
